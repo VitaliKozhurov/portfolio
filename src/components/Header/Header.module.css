@@ -1,7 +1,11 @@
 .header {
     background-color: aqua;
     height: 80px;
+}
+
+.headerBody {
     display: flex;
+    height: 100%;
     align-items: center;
     justify-content: flex-end;
 }

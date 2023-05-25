@@ -1,0 +1,18 @@
+.worksBlock {
+    height: 100vh;
+    background-color: rgb(164, 143, 234);
+}
+.title {
+    font-size: 24px;
+    font-weight: 600;
+    padding-top: 80px;
+    margin-bottom: 50px;
+}
+
+.worksBody {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    margin: 0 15px 80px;
+    flex-wrap: wrap;
+}

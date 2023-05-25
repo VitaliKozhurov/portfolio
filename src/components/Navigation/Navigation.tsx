@@ -11,7 +11,7 @@ const list: Array<NavListType> = [
     { id: 4, title: "Contacts" },
 ];
 
-export const Navigate = () => {
+export const Navigation = () => {
     return (
         <ul className={style.listBody}>
             {list.map((item) => (
