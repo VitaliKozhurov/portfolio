@@ -18,3 +18,24 @@
 }
 .descripption {
 }
+
+/* media query*/
+
+@media screen and (max-width:998px){
+    .item {
+        flex: 0 1 45%;
+    }
+}
+
+@media screen and (max-width:720px){
+    .item {
+        flex: 0 1 80%;
+    }
+}
+
+
+@media screen and (max-width:420px){
+    .item {
+        flex: 0 1 90%;
+    }
+}

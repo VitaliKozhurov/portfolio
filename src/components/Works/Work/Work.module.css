@@ -11,6 +11,7 @@
     background-color: rgb(183, 226, 212);
     margin-bottom: 20px;
 }
+
 .link {
     padding: 10px 20px;
     background-color: antiquewhite;
@@ -18,12 +19,29 @@
     border-radius: 5px;
     color: black;
 }
+
 .title {
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 20px;
 }
+
 .description {
     padding: 0 15px;
     margin-bottom: 20px;
+}
+
+/* media query*/
+
+@media screen and (max-width: 920px) {
+    .item {
+        flex: 0 1 80%;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:420px){
+    .item {
+        flex: 0 1 90%;
+    }
 }

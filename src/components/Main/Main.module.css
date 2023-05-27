@@ -34,3 +34,30 @@
     height: 500px;
     background-color: rgb(158, 232, 207);
 }
+
+
+/* ===== media query ===== */
+@media screen and (max-width: 768px) {
+    .mainBody {
+        flex-direction: column;
+    }
+
+    .text {
+        width: 420px;
+    }
+
+    .photo {
+        width: 420px;
+    }
+}
+
+
+@media screen and (max-width: 560px) {
+    .text {
+        width: 280px;
+    }
+
+    .photo {
+        width: 280px;
+    }
+}

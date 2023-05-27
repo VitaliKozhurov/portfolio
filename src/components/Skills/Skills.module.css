@@ -16,3 +16,10 @@
     margin: 0 15px 80px;
     flex-wrap: wrap;
 }
+
+
+/* media query*/
+
+@media screen and (max-width:998px){
+
+}
