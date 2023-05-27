@@ -1,12 +1,13 @@
 .worksBlock {
-    min-height: 100vh;
+    /*min-height: 100vh;*/
     background-color: rgb(164, 143, 234);
 }
+
 .title {
     font-size: 24px;
     font-weight: 600;
-    padding-top: 80px;
-    margin-bottom: 50px;
+    margin: 80px 0 50px;
+    background-color: antiquewhite;
 }
 
 .worksBody {
@@ -15,4 +16,5 @@
     gap: 20px;
     margin: 0 15px 80px;
     flex-wrap: wrap;
+
 }

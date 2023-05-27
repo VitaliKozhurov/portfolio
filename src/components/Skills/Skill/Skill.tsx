@@ -9,7 +9,7 @@ type SkillPropsType = {
 export const Skill: FC<SkillPropsType> = ({ title, description }) => {
     return (
         <li className={style.item}>
-            <span className={style.image}>Skill image</span>
+            <div className={style.image}>Skill image</div>
             <h3 className={style.title}>{title}</h3>
             <span className={style.description}>{description}</span>
         </li>

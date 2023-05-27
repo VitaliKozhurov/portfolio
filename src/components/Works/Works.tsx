@@ -24,7 +24,7 @@ const list: Array<WorkType> = [
 
 export const Works = () => {
     return (
-        <div className={style.worksBlock}>
+        <div className={ style.worksBlock}>
             <div className={containerStyle.container}>
                 <h2 className={style.title}>My Works</h2>
                 <ul className={style.worksBody}>

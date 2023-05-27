@@ -1,18 +1,18 @@
 .contactsBlock {
-    height: 100vh;
+    /*min-height: 100vh;*/
     background-color: rgb(143, 234, 158);
 }
 
 .title {
     font-size: 24px;
     font-weight: 600;
-    padding-top: 80px;
-    margin-bottom: 50px;
+    margin: 80px 0 50px;
+    background-color: antiquewhite;
 }
 
 .contactForm {
     width: 70%;
-    margin: 0 auto;
+    margin: 0 auto 80px;
     border: solid 1px;
     padding: 50px 70px 20px;
     display: flex;

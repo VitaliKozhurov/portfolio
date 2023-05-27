@@ -2,11 +2,12 @@
     /* height: 100vh; */
     background-color: rgb(143, 234, 221);
 }
+
 .title {
     font-size: 24px;
     font-weight: 600;
-    padding-top: 80px;
-    margin-bottom: 50px;
+    margin: 80px 0 50px;
+    background-color: antiquewhite;
 }
 
 .cardsBody {
@@ -20,6 +21,6 @@
 
 /* media query*/
 
-@media screen and (max-width:998px){
+@media screen and (max-width: 998px) {
 
 }
