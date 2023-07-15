@@ -1,0 +1,17 @@
+@import '../../common/style/sass/templates';
+@import "../../common/style/sass/variables";
+
+.header {
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top:0;
+  width: 100%;
+  background-color: $primaryBgColor;
+}
+
+.headerBody {
+  @extend %flex_sb;
+  height: 100%;
+  justify-content: flex-end;
+}

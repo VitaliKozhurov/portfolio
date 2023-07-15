@@ -48,7 +48,7 @@ const list: Array<SkillType> = [
 
 export const Skills = () => {
     return (
-        <div className={style.skillsBlock}>
+        <div id={'skills'} className={style.skillsBlock}>
             <div className={containerStyle.container}>
                 <h2 className={style.title}>My Skills</h2>
                 <ul className={style.cardsBody}>

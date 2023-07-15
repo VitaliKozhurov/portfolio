@@ -11,7 +11,7 @@ export const Contacts = () => {
     }
 
     return (
-        <div className={style.contactsBlock}>
+        <div id={'contacts'} className={style.contactsBlock}>
             <div className={containerStyle.container}>
                 <h2 className={style.title}>Contacts</h2>
                 <div className={style.contactForm}>

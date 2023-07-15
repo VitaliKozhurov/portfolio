@@ -1,0 +1,30 @@
+@import '../../common/style/sass/templates';
+@import '../../common/style/sass/variables';
+
+.listBody {
+  @extend %flex_sb;
+  font-size: 24px;
+  padding: 25px 0;
+
+  & > :not(:first-child) {
+    margin-left: 48px;
+  }
+
+  .link {
+    @extend %flex_sb;
+    cursor: pointer;
+    transition: .3s all;
+
+    &:hover {
+      color: $accentTextColor;
+    }
+
+    & span {
+      margin-left: 15px;
+    }
+  }
+}
+
+.active {
+  color: $accentTextColor;
+}
