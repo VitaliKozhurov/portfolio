@@ -14,6 +14,7 @@
     @extend %flex_sb;
     cursor: pointer;
     transition: .3s all;
+    border-radius: 50%;
 
     &:hover {
       color: $accentTextColor;
@@ -27,4 +28,46 @@
 
 .active {
   color: $accentTextColor;
+}
+
+
+/* ===== media query ===== */
+@media screen and (max-width: 992px) {
+  .listBody {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .listBody {
+    font-size: 20px;
+    flex-direction: column;
+    width: 50px;
+    padding: 5px 0;
+    border-radius: 50px;
+    background: rgba(0, 171, 240, 0.2);
+    & > :not(:first-child) {
+      margin-left: 0;
+    }
+    & > li{
+      margin: 20px 0;
+    }
+
+    span {
+      display: none;
+    }
+
+    .link {
+      &:hover.active{
+        color: #fff;
+      }
+    }
+  }
+
+  .active {
+    color: #fff;
+    background-color: $accentTextColor;
+    border-radius: 50%;
+    padding: 9px;
+  }
 }

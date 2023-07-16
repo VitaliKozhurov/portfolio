@@ -1,0 +1,28 @@
+@import "../../common/style/sass/templates";
+@import "../../common/style/sass/variables";
+@import "../../common/style/sass/mixins";
+
+.skillsBlock {
+
+}
+
+.title {
+  @include font(42px, 700, 1.5);
+  padding-top: 100px;
+  margin-bottom: 80px;
+}
+
+.cardsBody {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    margin: 0 15px 80px;
+    flex-wrap: wrap;
+}
+
+
+/* media query*/
+
+@media screen and (max-width: 998px) {
+
+}

@@ -1,0 +1,52 @@
+@import "../../../common/style/sass/templates";
+@import "../../../common/style/sass/variables";
+@import "../../../common/style/sass/mixins";
+
+.item {
+  flex: 0 1 15%;
+  padding: 10px;
+  //border: solid 1px;
+  @extend %flex_center;
+  flex-direction: column;
+
+  .image {
+    height: 80px;
+    width: 80px;
+    @extend %flex_center;
+
+    & svg {
+      font-size: 4rem;
+    }
+  }
+
+  .title {
+    @extend %flex_center;
+    margin: 15px 0;
+    font-size: 20px;
+    font-weight: 600;
+    height: 100%;
+  }
+
+
+}
+
+/* media query*/
+
+@media screen and (max-width: 998px) {
+  .item {
+    flex: 0 1 45%;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .item {
+    flex: 0 1 80%;
+  }
+}
+
+
+@media screen and (max-width: 420px) {
+  .item {
+    flex: 0 1 90%;
+  }
+}

@@ -5,13 +5,27 @@
   position: fixed;
   z-index: 100;
   left: 0;
-  top:0;
+  top: 0;
   width: 100%;
   background-color: $primaryBgColor;
+
+  .headerBody {
+    @extend %flex_sb;
+    height: 100%;
+    justify-content: flex-end;
+  }
 }
 
-.headerBody {
-  @extend %flex_sb;
-  height: 100%;
-  justify-content: flex-end;
+
+@media screen and (max-width: 768px) {
+  .header {
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background: none;
+
+    .headerBody {
+      width: auto;
+    }
+  }
 }
