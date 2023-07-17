@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './Footer.module.css';
+import style from './Footer.module.scss';
 import containerStyle from '../../common/style/containerStyle.module.css';
 import vk from '../../common/image/vk.svg';
 import telegram from '../../common/image/telegram.svg';
