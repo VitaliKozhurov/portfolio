@@ -2,7 +2,7 @@ import {FC, ReactNode} from 'react';
 import style from './Skill.module.scss';
 
 type SkillPropsType = {
-    title: string;
+    title: string
     icon: ReactNode
 };
 

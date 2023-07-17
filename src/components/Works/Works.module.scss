@@ -2,28 +2,27 @@
 @import "../../common/style/sass/variables";
 @import "../../common/style/sass/mixins";
 
-.skillsBlock {
-  min-height: 100vh;
+.worksBlock {
   @extend %flex_center;
+  min-height: 100vh;
+  padding-top: 20px;
 }
 
 .title {
   @include font(42px, 700, 1.5);
-  padding-top: 80px;
-  margin-bottom: 50px;
+  margin: 80px 0 50px;
 }
 
-.cardsBody {
+.worksBody {
   display: flex;
   justify-content: space-around;
+  gap: 30px;
   margin: 0 15px 80px;
   flex-wrap: wrap;
 }
 
-
-/* media query*/
 @media screen and (max-width: 560px) {
   .title {
-    font-size: 28px;
+    @include font(28px, 700, 1.5);
   }
 }

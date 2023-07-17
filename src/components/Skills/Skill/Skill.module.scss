@@ -4,14 +4,13 @@
 
 .item {
   flex: 0 1 15%;
-  padding: 10px;
-  //border: solid 1px;
+  padding: 8px;
   @extend %flex_center;
   flex-direction: column;
 
   .image {
-    height: 80px;
-    width: 80px;
+    height: 70px;
+    width: 70px;
     @extend %flex_center;
 
     & svg {
@@ -22,8 +21,7 @@
   .title {
     @extend %flex_center;
     margin: 15px 0;
-    font-size: 20px;
-    font-weight: 600;
+    @include font(20px, 600, 1.5);
     height: 100%;
   }
 
@@ -32,20 +30,27 @@
 
 /* media query*/
 
+@media screen and (max-width: 1380px) {
+  .item {
+    flex: 0 1 25%;
+  }
+}
+
+
 @media screen and (max-width: 998px) {
   .item {
-    flex: 0 1 45%;
+    flex: 0 1 33%;
   }
 }
 
 @media screen and (max-width: 720px) {
   .item {
-    flex: 0 1 80%;
+    flex: 0 1 50%;
   }
 }
 
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 560px) {
   .item {
     flex: 0 1 90%;
   }
