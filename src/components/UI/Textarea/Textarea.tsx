@@ -1,5 +1,5 @@
 import { FC } from "react";
-import style from "./Textarea.module.css";
+import style from "./Textarea.module.scss";
 
 type TextareaPropsType = {
     placeholder: string;

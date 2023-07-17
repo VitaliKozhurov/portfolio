@@ -1,5 +1,5 @@
 import {FC} from 'react';
-import style from './Input.module.css';
+import style from './Input.module.scss';
 
 type InputPropsType = {
     type: string

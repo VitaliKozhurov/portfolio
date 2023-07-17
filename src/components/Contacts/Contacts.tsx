@@ -1,7 +1,5 @@
-import style from './Contacts.module.css';
+import style from './Contacts.module.scss';
 import containerStyle from '../../common/style/containerStyle.module.css';
-import {Input} from '../UI/Input/Input';
-import {Textarea} from '../UI/Textarea/Textarea';
 import {Button} from '../UI/Button/Button';
 
 export const Contacts = () => {
@@ -15,12 +13,29 @@ export const Contacts = () => {
             <div className={containerStyle.container}>
                 <h2 className={style.title}>Contacts</h2>
                 <div className={style.contactForm}>
-                    <form>
-                        <Input type={'text'} placeholder={'Enter your name...'} />
-                        <Input type={'text'} placeholder={'Enter your email...'} />
-                        <Textarea placeholder={'Enter your message...'} />
+                    <span className={style.backGround}></span>
+                    <form className={style.form}>
+                        <div className={style.inputBox}>
+                            <input type="text" className={style.input} required />
+                            <label>Your name</label>
+                        </div>
+                        <div className={style.inputBox}>
+                            <input type="text" className={style.input} required />
+                            <label>Your email</label>
+                        </div>
+                        <div className={style.inputBox}>
+                            <textarea style={{resize: 'none'}} className={style.input} required />
+                            <label>Your message</label>
+                        </div>
+                        <button className={style.btn}>Send message</button>
                     </form>
-                    <Button title={'Send'} callback={onButtonClickHandler} />
+                    <div className={style.info}>
+                        <h3 className={style.titleInfo}>
+                            Interested in working with me?
+                        </h3>
+                        <p className={style.hireMe}>Hire me!</p>
+                    </div>
+
                 </div>
             </div>
 

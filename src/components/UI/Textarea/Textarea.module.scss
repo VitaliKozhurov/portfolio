@@ -1,0 +1,11 @@
+.text {
+  border-radius: 5px;
+  width: 100%;
+  resize: none;
+}
+
+@media screen and (max-width: 768px) {
+  .text {
+    margin-bottom: 40px;
+  }
+}
