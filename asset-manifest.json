@@ -1,18 +1,29 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.96ed42fd.css",
-    "main.js": "/portfolio/static/js/main.95c16f97.js",
+    "main.css": "/portfolio/static/css/main.790f59a1.css",
+    "main.js": "/portfolio/static/js/main.7a2a1ef8.js",
     "static/js/787.128fc6e9.chunk.js": "/portfolio/static/js/787.128fc6e9.chunk.js",
-    "static/media/vk.svg": "/portfolio/static/media/vk.9ae51984f3e7488f139cdd68bba14dcd.svg",
-    "static/media/telegram.svg": "/portfolio/static/media/telegram.67851043bd550316ab7d5f29a4a02673.svg",
+    "static/media/ava.png": "/portfolio/static/media/ava.7e622e226ca9d2388bf2.png",
+    "static/media/Poppins-Light.ttf": "/portfolio/static/media/Poppins-Light.7641a0f76ca9ef6c252c.ttf",
+    "static/media/Poppins-Regular.ttf": "/portfolio/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
+    "static/media/Poppins-Medium.ttf": "/portfolio/static/media/Poppins-Medium.673ed42382ab264e0bf5.ttf",
+    "static/media/Poppins-SemiBold.ttf": "/portfolio/static/media/Poppins-SemiBold.ac8d04b620e54be9b0f0.ttf",
+    "static/media/Poppins-Bold.ttf": "/portfolio/static/media/Poppins-Bold.cdb29a5d7ccf57ff05a3.ttf",
+    "static/media/Poppins-ExtraBold.ttf": "/portfolio/static/media/Poppins-ExtraBold.01849ee091e1762a5dd5.ttf",
+    "static/media/Poppins-Black.ttf": "/portfolio/static/media/Poppins-Black.d8b850b920a5ef49d752.ttf",
+    "static/media/shop.webp": "/portfolio/static/media/shop.62947d70909a856df8a8.webp",
+    "static/media/sn.webp": "/portfolio/static/media/sn.8d3a9fc5e15f1d9a38bc.webp",
+    "static/media/todo.webp": "/portfolio/static/media/todo.fd4b985655c0366881b1.webp",
+    "static/media/counter.webp": "/portfolio/static/media/counter.49ba253d2e1a8efaa036.webp",
+    "static/media/game.webp": "/portfolio/static/media/game.6863ce5e59c1c4900dc5.webp",
     "index.html": "/portfolio/index.html",
-    "static/media/linkedin.svg": "/portfolio/static/media/linkedin.7f711a11017ceead8da316d1ee0c6ca7.svg",
-    "main.96ed42fd.css.map": "/portfolio/static/css/main.96ed42fd.css.map",
-    "main.95c16f97.js.map": "/portfolio/static/js/main.95c16f97.js.map",
+    "static/media/figma.svg": "/portfolio/static/media/figma.1bb7e283c61962cb6d6f6b9b77eb942b.svg",
+    "main.790f59a1.css.map": "/portfolio/static/css/main.790f59a1.css.map",
+    "main.7a2a1ef8.js.map": "/portfolio/static/js/main.7a2a1ef8.js.map",
     "787.128fc6e9.chunk.js.map": "/portfolio/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.96ed42fd.css",
-    "static/js/main.95c16f97.js"
+    "static/css/main.790f59a1.css",
+    "static/js/main.7a2a1ef8.js"
   ]
 }
