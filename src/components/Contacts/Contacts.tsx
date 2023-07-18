@@ -1,18 +1,30 @@
 import style from './Contacts.module.scss';
 import containerStyle from '../../common/style/containerStyle.module.css';
-import {Button} from '../UI/Button/Button';
+import {motion} from 'framer-motion';
+import {textAnimation} from '../Skills/Skills';
 
 export const Contacts = () => {
-
-    const onButtonClickHandler = () => {
-        alert('Привет Света!!!')
-    }
-
     return (
-        <div id={'contacts'} className={style.contactsBlock}>
+        <motion.section
+            id={'contacts'}
+            className={style.contactsBlock}
+            initial={'hidden'}
+            whileInView={'visible'}
+            viewport={{amount: 0.2, once: true}}
+        >
             <div className={containerStyle.container}>
-                <h2 className={style.title}>Contacts</h2>
-                <div className={style.contactForm}>
+                <motion.h2
+                    className={style.title}
+                    custom={1}
+                    variants={textAnimation}
+                >
+                    Contacts
+                </motion.h2>
+                <motion.div
+                    className={style.contactForm}
+                    custom={2}
+                    variants={textAnimation}
+                >
                     <span className={style.backGround}></span>
                     <form className={style.form}>
                         <div className={style.inputBox}>
@@ -36,9 +48,8 @@ export const Contacts = () => {
                         <p className={style.hireMe}>Hire me!</p>
                     </div>
 
-                </div>
+                </motion.div>
             </div>
-
-        </div>
+        </motion.section>
     );
 };

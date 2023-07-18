@@ -8,7 +8,7 @@ import {RiJavascriptFill} from 'react-icons/ri';
 import {BiLogoTypescript} from 'react-icons/bi';
 import {SiAxios, SiCss3, SiJest, SiMui, SiReactrouter, SiRedux, SiStorybook, SiStyledcomponents} from 'react-icons/si';
 import {AiOutlineCloudServer} from 'react-icons/ai';
-import {FaFigma, FaGitAlt, FaHtml5, FaSass} from 'react-icons/fa6';
+import {FaGitAlt, FaHtml5, FaSass} from 'react-icons/fa6';
 import figma from '../../common/image/figma.svg';
 import {motion} from 'framer-motion';
 
@@ -111,7 +111,7 @@ const list: Array<SkillType> = [
 const animateList = list.slice(0, 6).map(elem => [elem.title, 2000]).flat()
 
 
-const textAnimation = {
+export const textAnimation = {
     hidden: {
         y: 100,
         opacity: 0

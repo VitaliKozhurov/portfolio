@@ -1,3 +1,7 @@
+@import "../../common/style/sass/templates";
+@import "../../common/style/sass/variables";
+@import "../../common/style/sass/mixins";
+
 .footer {
   min-height: 80px;
 }
@@ -5,17 +9,70 @@
 .footerBody {
   padding: 10px 0;
   height: 100%;
-
+  @extend %flex_center;
+  flex-direction: column;
 }
 
-.list {
-  width: 250px;
-  margin: 10px auto;
-  display: flex;
-  justify-content: space-between;
+.socials {
+  @extend %flex_center;
+  width: 300px;
+  margin: 15px 0;
+
+  a {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    color: $accentTextColor;
+    margin: 0 15px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 5px rgba(0, 171, 240, 0.05);
+    @extend %flex_center;
+    overflow: hidden;
+    transition: transform .5s;
+
+    &::after {
+      content: '';
+      width: 100%;
+      height: 100%;
+      top: -60px;
+      left: 0;
+      background-color: $accentTextColor;
+      position: absolute;
+      transition: .5s;
+    }
+
+    &:hover::after {
+      top: 0;
+    }
+
+    & svg {
+      font-size: 24px;
+      position: relative;
+      z-index: 10;
+    }
+
+    &:hover svg {
+      color: #fff;
+    }
+
+    &:hover {
+      transform: translateY(-8px);
+    }
+  }
 }
 
-.item {
-  width: 30px;
-  height: 30px;
+@media screen and (max-width: 560px) {
+  .socials {
+    a {
+      width: 30px;
+      height: 30px;
+      margin: 0 10px;
+
+      & svg {
+        font-size: 18px;
+      }
+    }
+
+  }
 }

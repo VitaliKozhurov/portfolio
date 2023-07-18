@@ -6,6 +6,8 @@ import todo_list from '../../common/image/todo.webp';
 import counter from '../../common/image/counter.webp';
 import game from '../../common/image/game.webp';
 import shop from '../../common/image/shop.webp';
+import {textAnimation} from '../Skills/Skills';
+import {motion} from 'framer-motion';
 
 
 type WorkType = {
@@ -54,10 +56,25 @@ const list: Array<WorkType> = [
 
 export const Works = () => {
     return (
-        <section id={'my works'} className={style.worksBlock}>
+        <motion.section
+            id={'my works'}
+            className={style.worksBlock}
+            initial={'hidden'}
+            whileInView={'visible'}
+            viewport={{amount: 0.2, once: true}}
+        >
             <div className={containerStyle.container}>
-                <h2 className={style.title}>My Works</h2>
-                <ul className={style.worksBody}>
+                <motion.h2
+                    className={style.title}
+                    custom={1}
+                    variants={textAnimation}
+                >My Works
+                </motion.h2>
+                <motion.ul
+                    custom={2}
+                    variants={textAnimation}
+                    className={style.worksBody}
+                >
                     {list.map((item) => (
                         <Work
                             key={item.id}
@@ -66,8 +83,8 @@ export const Works = () => {
                             description={item.description}
                         />
                     ))}
-                </ul>
+                </motion.ul>
             </div>
-        </section>
+        </motion.section>
     );
 };
