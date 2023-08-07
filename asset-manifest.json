@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.ff2ce271.css",
-    "main.js": "/portfolio/static/js/main.bdc102e2.js",
+    "main.css": "/portfolio/static/css/main.df100c29.css",
+    "main.js": "/portfolio/static/js/main.57a566c8.js",
     "static/js/787.128fc6e9.chunk.js": "/portfolio/static/js/787.128fc6e9.chunk.js",
     "static/media/ava.png": "/portfolio/static/media/ava.7e622e226ca9d2388bf2.png",
     "static/media/Poppins-Light.ttf": "/portfolio/static/media/Poppins-Light.7641a0f76ca9ef6c252c.ttf",
@@ -18,12 +18,12 @@
     "static/media/game.webp": "/portfolio/static/media/game.6863ce5e59c1c4900dc5.webp",
     "index.html": "/portfolio/index.html",
     "static/media/figma.svg": "/portfolio/static/media/figma.1bb7e283c61962cb6d6f6b9b77eb942b.svg",
-    "main.ff2ce271.css.map": "/portfolio/static/css/main.ff2ce271.css.map",
-    "main.bdc102e2.js.map": "/portfolio/static/js/main.bdc102e2.js.map",
+    "main.df100c29.css.map": "/portfolio/static/css/main.df100c29.css.map",
+    "main.57a566c8.js.map": "/portfolio/static/js/main.57a566c8.js.map",
     "787.128fc6e9.chunk.js.map": "/portfolio/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ff2ce271.css",
-    "static/js/main.bdc102e2.js"
+    "static/css/main.df100c29.css",
+    "static/js/main.57a566c8.js"
   ]
 }
