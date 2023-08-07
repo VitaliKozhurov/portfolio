@@ -25,38 +25,38 @@ export const Footer = () => {
                         <motion.li
                             custom={1}
                             variants={textAnimation} className={style.item}>
-                            <a href="#"><BiLogoLinkedin /></a>
+                            <a href="https://www.linkedin.com/in/vitalikozhurov/" target={'_blank'}><BiLogoLinkedin /></a>
                         </motion.li>
                         <motion.li
                             custom={2}
                             variants={textAnimation}
                             className={style.item}>
-                            <a href="#"><LuGithub /></a>
+                            <a href="https://github.com/VitaliKozhurov" target={'_blank'}><LuGithub /></a>
                         </motion.li>
                         <motion.li
                             custom={3}
                             variants={textAnimation}
                             className={style.item}>
-                            <a href="https://telegram.me/vitalik_kazhurou"><FaTelegramPlane /></a>
+                            <a href="https://telegram.me/vitalik_kazhurou" target={'_blank'}><FaTelegramPlane /></a>
                         </motion.li>
                         <motion.li
                             custom={4}
                             variants={textAnimation}
                             className={style.item}>
-                            <a href="#"><BiLogoGmail /></a>
+                            <a href="mailto:vitalik24021992@gmail.com"><BiLogoGmail /></a>
                         </motion.li>
                         <motion.li
                             custom={5}
                             variants={textAnimation}
                             className={style.item}
                         >
-                            <a href="#"><SlSocialVkontakte strokeWidth={'20'} /></a>
+                            <a href="https://vk.com/id776661901" target={'_blank'}><SlSocialVkontakte strokeWidth={'20'} /></a>
                         </motion.li>
                         <motion.li
                             custom={6}
                             variants={textAnimation}
                             className={style.item}>
-                            <a href={'#'}><FaPhone /></a>
+                            <a href={'tel:+375298167680'}><FaPhone /></a>
                         </motion.li>
                     </ul>
                     <p>&copy; {`${(new Date()).getFullYear()} All rights reserved`}</p>
@@ -65,5 +65,3 @@ export const Footer = () => {
         </>
     )
 };
-{/*<div className={style.socials}>*/
-}

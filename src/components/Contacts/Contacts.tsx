@@ -4,6 +4,8 @@ import {motion} from 'framer-motion';
 import {textAnimation} from '../Skills/Skills';
 import {useFormik} from "formik";
 import axios from "axios";
+import {Context} from "../../App";
+import React, {useContext} from "react";
 
 type InitialValueType = {
     name: string
@@ -15,7 +17,7 @@ const initialValues: InitialValueType = {
     name: '',
     email: '',
     message: ''
-}
+};
 
 const validate = (values: InitialValueType) => {
     const errors: Partial<InitialValueType> = {};
@@ -34,13 +36,13 @@ const validate = (values: InitialValueType) => {
 };
 
 export const Contacts = () => {
+    const context = useContext(Context);
 
     const formik = useFormik({
         initialValues,
         validate,
         onSubmit: async (values) => {
-            const result = await axios.post('https://contact-form-backend.vercel.app/send-message', values)
-
+            await axios.post('https://contact-form-backend.vercel.app/send-message', values).then((data) => context?.changeNotificationStatus(true))
         }
     })
 

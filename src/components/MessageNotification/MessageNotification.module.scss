@@ -1,0 +1,13 @@
+.message{
+  position: fixed;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+  z-index: 100;
+  padding: 20px 40px;
+  background-color: #4FBF26;
+  color: #fff;
+  font-weight: 600;
+  font-size: 24px;
+  border-radius: 5px;
+}
