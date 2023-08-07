@@ -46,8 +46,9 @@
     & .inputBox:last-of-type {
       height: 80px;
       padding-top: 7px;
+
       & label {
-        top:25%;
+        top: 25%;
       }
     }
 
@@ -74,7 +75,18 @@
           top: -5px;
           color: $accentTextColor;
         }
+
+
       }
+
+      .errorMessage {
+        color: rgb(128, 33, 32);
+        position: absolute;
+        right: 0;
+        bottom: -25px;
+        font-size: 14px;
+      }
+
 
       & label {
         position: absolute;

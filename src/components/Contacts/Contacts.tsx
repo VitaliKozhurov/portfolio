@@ -2,8 +2,52 @@ import style from './Contacts.module.scss';
 import containerStyle from '../../common/style/containerStyle.module.css';
 import {motion} from 'framer-motion';
 import {textAnimation} from '../Skills/Skills';
+import {useFormik} from "formik";
+import axios from "axios";
+
+type InitialValueType = {
+    name: string
+    email: string
+    message: string
+}
+
+const initialValues: InitialValueType = {
+    name: '',
+    email: '',
+    message: ''
+}
+
+const validate = (values: InitialValueType) => {
+    const errors: Partial<InitialValueType> = {};
+    if (!values.name) {
+        errors.name = 'This field is required';
+    }
+    if (!values.message) {
+        errors.message = 'This field is required';
+    }
+    if (!values.email) {
+        errors.email = 'This field is required';
+    } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
+        errors.email = 'Invalid email address';
+    }
+    return errors;
+};
 
 export const Contacts = () => {
+
+    const formik = useFormik({
+        initialValues,
+        validate,
+        onSubmit: async (values) => {
+            const result = await axios.post('https://contact-form-backend.vercel.app/send-message', values)
+
+        }
+    })
+
+    const isError = (touched: boolean | undefined, error: string | undefined) => {
+        return touched && error
+    }
+
     return (
         <motion.section
             id={'contacts'}
@@ -26,20 +70,27 @@ export const Contacts = () => {
                     variants={textAnimation}
                 >
                     <span className={style.backGround}></span>
-                    <form className={style.form}>
+                    <form onSubmit={formik.handleSubmit} className={style.form} noValidate>
                         <div className={style.inputBox}>
-                            <input type="text" className={style.input} required />
+                            <input type="text" className={style.input} required {...formik.getFieldProps('name')}/>
                             <label>Your name</label>
+                            {isError(formik.touched.name, formik.errors.name) &&
+                                <div className={style.errorMessage}>{formik.errors.name}</div>}
                         </div>
                         <div className={style.inputBox}>
-                            <input type="text" className={style.input} required />
+                            <input type="text" className={style.input} required {...formik.getFieldProps('email')}/>
                             <label>Your email</label>
+                            {isError(formik.touched.email, formik.errors.email) &&
+                                <div className={style.errorMessage}>{formik.errors.email}</div>}
                         </div>
                         <div className={style.inputBox}>
-                            <textarea style={{resize: 'none'}} className={style.input} required />
+                            <textarea style={{resize: 'none'}} className={style.input}
+                                      required {...formik.getFieldProps('message')}/>
                             <label>Your message</label>
+                            {isError(formik.touched.message, formik.errors.message) &&
+                                <div className={style.errorMessage}>{formik.errors.message}</div>}
                         </div>
-                        <button className={style.btn}>Send message</button>
+                        <button type={'submit'} className={style.btn}>Send message</button>
                     </form>
                     <div className={style.info}>
                         <h3 className={style.titleInfo}>
