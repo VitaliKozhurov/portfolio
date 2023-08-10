@@ -5,6 +5,8 @@
 .skillsBlock {
   min-height: 100vh;
   padding-top: 80px;
+  background-color: #081b29;
+  position: relative;
   @extend %flex_center;
 }
 

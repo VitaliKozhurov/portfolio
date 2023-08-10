@@ -1,12 +1,17 @@
 import style from './Main.module.scss';
 import containerStyle from '../../common/style/containerStyle.module.css';
 import ava from '../../common/image/ava.png'
+import {ParticlesWrapper} from "../Particles/Particles";
 
 
 export const Main = () => {
     return (
         <section id={'home'} className={style.mainBlock}>
+
             <div className={containerStyle.container}>
+                <div className={style.particles}>
+                    <ParticlesWrapper/>
+                </div>
                 <div className={style.mainBody}>
                     <h3>Hello, It's me</h3>
                     <h1 className={style.username}>Vitali Kazhurou</h1>

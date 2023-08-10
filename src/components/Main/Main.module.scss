@@ -6,7 +6,8 @@
   @extend %flex_center;
   min-height: 100vh;
   padding-top: 80px;
-}
+  position: relative;
+  }
 
 .mainBody {
   @extend %flex_center;
@@ -42,6 +43,7 @@
   border-radius: 50%;
   @extend %flex_sb;
   justify-content: center;
+  background: #081b29;
 
   & img {
     width: 90%;
