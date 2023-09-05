@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.df100c29.css",
-    "main.js": "/portfolio/static/js/main.57a566c8.js",
+    "main.css": "/portfolio/static/css/main.60432c74.css",
+    "main.js": "/portfolio/static/js/main.a3a74351.js",
     "static/js/787.128fc6e9.chunk.js": "/portfolio/static/js/787.128fc6e9.chunk.js",
     "static/media/ava.png": "/portfolio/static/media/ava.7e622e226ca9d2388bf2.png",
     "static/media/Poppins-Light.ttf": "/portfolio/static/media/Poppins-Light.7641a0f76ca9ef6c252c.ttf",
@@ -11,6 +11,7 @@
     "static/media/Poppins-Bold.ttf": "/portfolio/static/media/Poppins-Bold.cdb29a5d7ccf57ff05a3.ttf",
     "static/media/Poppins-ExtraBold.ttf": "/portfolio/static/media/Poppins-ExtraBold.01849ee091e1762a5dd5.ttf",
     "static/media/Poppins-Black.ttf": "/portfolio/static/media/Poppins-Black.d8b850b920a5ef49d752.ttf",
+    "static/media/nft.webp": "/portfolio/static/media/nft.c2c8e9ed057df12c200a.webp",
     "static/media/shop.webp": "/portfolio/static/media/shop.62947d70909a856df8a8.webp",
     "static/media/sn.webp": "/portfolio/static/media/sn.8d3a9fc5e15f1d9a38bc.webp",
     "static/media/todo.webp": "/portfolio/static/media/todo.fd4b985655c0366881b1.webp",
@@ -18,12 +19,12 @@
     "static/media/game.webp": "/portfolio/static/media/game.6863ce5e59c1c4900dc5.webp",
     "index.html": "/portfolio/index.html",
     "static/media/figma.svg": "/portfolio/static/media/figma.1bb7e283c61962cb6d6f6b9b77eb942b.svg",
-    "main.df100c29.css.map": "/portfolio/static/css/main.df100c29.css.map",
-    "main.57a566c8.js.map": "/portfolio/static/js/main.57a566c8.js.map",
+    "main.60432c74.css.map": "/portfolio/static/css/main.60432c74.css.map",
+    "main.a3a74351.js.map": "/portfolio/static/js/main.a3a74351.js.map",
     "787.128fc6e9.chunk.js.map": "/portfolio/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.df100c29.css",
-    "static/js/main.57a566c8.js"
+    "static/css/main.60432c74.css",
+    "static/js/main.a3a74351.js"
   ]
 }
