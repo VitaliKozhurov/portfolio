@@ -7,6 +7,7 @@ import counter from '../../common/image/counter.webp';
 import game from '../../common/image/game.webp';
 import shop from '../../common/image/shop.webp';
 import nft from '../../common/image/nft.webp';
+import flashcards from '../../common/image/flashcards.webp';
 import {textAnimation} from '../Skills/Skills';
 import {motion} from 'framer-motion';
 
@@ -22,13 +23,14 @@ type WorkType = {
 const list: Array<WorkType> = [
     {
         id: 1,
-        title: 'Social Network',
-        image: social_network,
+        title: 'Flash Cards',
+        image: flashcards,
         description:
-            'React / Type Script / Redux / Redux Thunk / React Router / Formik / Axios / Hooks and Classes',
-        gitHubUrl: 'https://github.com/VitaliKozhurov/social-network',
-        deployUrl:'https://vitalikozhurov.github.io/social-network/'
+            'React / Type Script / Redux Toolkit / RTK Query / React Router / Storybook / Radix / React Hook Form / Hooks',
+        gitHubUrl: 'https://github.com/VitaliKozhurov/flashcards',
+        deployUrl:'https://flashcards-learning.vercel.app/sign-in'
     },
+
     {
         id: 2,
         title: 'Todo List',
@@ -40,6 +42,15 @@ const list: Array<WorkType> = [
     },
     {
         id: 3,
+        title: 'Social Network',
+        image: social_network,
+        description:
+            'React / Type Script / Redux / Redux Thunk / React Router / Formik / Axios / Hooks and Classes',
+        gitHubUrl: 'https://github.com/VitaliKozhurov/social-network',
+        deployUrl:'https://vitalikozhurov.github.io/social-network/'
+    },
+    {
+        id: 4,
         title: 'Counter',
         image: counter,
         description:
@@ -48,7 +59,7 @@ const list: Array<WorkType> = [
         deployUrl:'https://counter-seven-virid.vercel.app/'
     },
     {
-        id: 4,
+        id: 5,
         title: 'Mini Game like Mario',
         image: game,
         description:
@@ -57,7 +68,7 @@ const list: Array<WorkType> = [
         deployUrl:'https://vitalikozhurov.github.io/kozhurov_game.github.io/'
     },
     {
-        id: 5,
+        id: 6,
         title: 'SPA for presentations and promotion of NFT',
         image: nft,
         description:
@@ -66,7 +77,7 @@ const list: Array<WorkType> = [
         deployUrl:'https://nft-art-tau.vercel.app/'
     },
     {
-        id: 6,
+        id: 7,
         title: 'Website for a clothing store with adaptive layout',
         image: shop,
         description:
